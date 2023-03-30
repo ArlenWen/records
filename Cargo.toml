@@ -3,6 +3,17 @@ name = "records"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+db = { path = "src/db" }
+auth = { path = "src/auth" }
+bill = { path = "src/bill" }
+report = { path = "src/report" }
+
+chrono = { version = "0.4.24" }
+actix-web = { version = "3.3.2" }
+log = {version = "0.4.14" }
+log4rs = { version = "1.0.0" }
+serde = { version = "1.0.130", features = ["derive"]}
+serde_yaml = { version = "0.8.21" }
+lazy_static = "1.4.0"

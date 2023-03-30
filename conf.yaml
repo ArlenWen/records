@@ -1,0 +1,11 @@
+log:
+  stdout:
+    pattern: "{d} - {l} -{t} - {m}{n}"
+  file:
+    pattern: "{d} - {l} - {t} - {m}{n}"
+    path: "records.log"
+  level: "info"
+
+service:
+  host: "0.0.0.0"
+  port: 7005
